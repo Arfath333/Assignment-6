@@ -1,0 +1,121 @@
+/* CSS Assignment 1 Instructions:
+Using the provided HTML structure, create a CSS file (styles.css) to style the "My Favorite Books" page. Your task is to apply styles using element selectors, classes, and IDs. Follow these requirements:
+
+1. Style the body:
+Use a sans-serif font
+Set a background color----(Done)
+
+2. Style the header:
+Add a background color
+Center the text
+Set the text color to white-----(Done)
+
+
+3. Style the main headings (h1 and h2):
+Choose appropriate colors
+Adjust the font size if needed-----(Done)
+
+
+4. Style the unordered lists:
+Remove bullet points
+Add some spacing between list items-----(Done)
+
+
+5. Style individual list items:
+Add a background color
+Add some padding
+Round the corners-----(Done)
+
+
+Use the "bestseller" class to:
+Make the text bold
+Change the text color to make it stand out-----(Done)
+
+
+Use IDs to style the fiction and non-fiction sections differently:
+Add different background colors
+Add padding
+Round the corners
+
+
+Style the footer:
+Center the text
+Make it italic
+
+
+Use the "student-name" class to:
+Make the text bold
+Change the text color */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    background-color: black;
+}
+
+header {
+    background-color:darkgray;
+    text-align: center;
+    color: white;
+}
+main h2{
+    color: white;
+    font-size: 20px;
+}
+ul {
+    color: white;
+    font-size: 12px;
+    list-style: none;
+    margin: 20px;
+}
+#fiction li:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+li{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+#fiction li {
+    background-color: chartreuse;
+}
+
+#fiction .bestseller {
+    color:rgb(26, 197, 118);
+    background-color:coral;
+    font-weight: 900;
+}
+
+#non-fiction h2 {
+    color:dimgray ;
+}
+#non-fiction li {
+    background-color: greenyellow;
+    font-weight: bold;
+}
+#non-fiction .bestseller {
+    background-color: honeydew;
+    color: black;
+}
+#non-fiction li:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+footer .student-name{
+    color:rgb(26, 197, 118);
+
+}
